@@ -1,0 +1,19 @@
+{
+    "name": "kerasai/robo-drupal",
+    "description": "Robo commands for Drupal.",
+    "type": "library",
+    "require": {
+        "consolidation/robo": "~3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kerasai\\RoboDrupal\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Will Long",
+            "email": "will@kerasai.com"
+        }
+    ]
+}
