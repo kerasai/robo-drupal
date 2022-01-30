@@ -40,4 +40,21 @@ trait DrupalTasks {
     return $collection;
   }
 
+  /**
+   * Install from existing config.
+   */
+  public function installExisting() {
+    return $this->taskExec($this->getDrushCmd() . ' si -y --existing-config');
+  }
+
+  /**
+   * Gets the command to run drush.
+   *
+   * @return string
+   *   The drush command.
+   */
+  protected function getDrushCmd() {
+    return $this->getConfigVal("drupal.drush", 'vendor/bin/drush');
+  }
+
 }
