@@ -3,8 +3,8 @@
     "description": "Robo commands for Drupal.",
     "type": "library",
     "require": {
-        "consolidation/robo": "~3 || ~4",
-        "kerasai/robo-config": "^1.0.2"
+        "consolidation/robo": "~3 || ~4 || ~5",
+        "kerasai/robo-config": "^1.0.3"
     },
     "autoload": {
         "psr-4": {
